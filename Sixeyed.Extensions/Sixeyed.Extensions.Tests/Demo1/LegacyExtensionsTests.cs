@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sixeyed.Extensions.Samples.Demo1;
-using System;
 
-namespace Sixeyed.Extensions.Tests
+namespace Sixeyed.Extensions.Tests.Demo1
 {
     [TestClass]
     public class LegacyExtensionsTests
