@@ -1,6 +1,6 @@
-﻿using System.Threading;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sixeyed.Extensions.Advanced.Demo1;
+using System.Threading;
 
 namespace Sixeyed.Extensions.Advanced.Tests.Demo1
 {
@@ -32,7 +32,7 @@ namespace Sixeyed.Extensions.Advanced.Tests.Demo1
             var instrumentation = new Instrumentation();
             instrumentation.StartWithPrecision();
             Thread.Sleep(750);
-            Assert.AreEqual(750, instrumentation.GetReallyPreciseElapsedTime());
+            Assert.IsTrue(750 <= instrumentation.GetReallyPreciseElapsedTime() && instrumentation.GetReallyPreciseElapsedTime() <= 755);
         }
     }
 }

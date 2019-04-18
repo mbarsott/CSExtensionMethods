@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sixeyed.Extensions.Advanced
+namespace Sixeyed.Extensions.Advanced.Demo1
 {
     public sealed class Instrumentation
     {
